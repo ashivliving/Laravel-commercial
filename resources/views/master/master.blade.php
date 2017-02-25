@@ -4,7 +4,7 @@
 	<title>Tuna-Deals</title>
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="{{URL::asset('css/bootstrap.min.css')}}" crossorigin="anonymous">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<!-- Latest compiled and minified JavaScript -->
 	

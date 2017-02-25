@@ -24,7 +24,7 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $deals = Deals::all();
+        $deals = Deals::orderBy('updated_at', 'DESC')->get();
         return view('welcome', compact('deals'));
     }
 }

@@ -53,16 +53,16 @@
                 @foreach($deals as $deal)
                     <div class="col-sm-4 col-lg-4 col-md-4">
                         <div class="thumbnail">
-                            <div style="width:320px;height:200px;">
-                            <img style="width:250px;height:200px;" src="{{$deal->image}}" alt="{{$deal->heading}}">
-                            </div>
+                            
+                            <img style="max-width:auto;height:180px;" src="{{$deal->image}}" alt="{{$deal->heading}}">
+                            
                             <div class="caption">
                                 <div class="col-12" style="display:block;">
                                 <h4 class="success"><span>&nbsp;&nbsp;&nbsp;&nbsp;<strike>&#8377; {{$deal->actual_cost}}/-</span></strike> <span class="pull-left" style="color:green;">&#8377; {{$deal->current_cost}}/-</span></h4></div>
                                 <div style="display:block;">
                                 <h4 class=""><a href="#">{{$deal->heading}}</a></h4><br>
                                 </div>
-                                <h5 class="center-block"><b>8 hours . {{$deal->vendor}}</b></h5>
+                                <h5 class="center-block"><b>{{$deal->updated_at->diffForHumans()}} . {{$deal->vendor}}</b></h5>
                             </div>
                             <div class="ratings bottom">
                                 <button class="btn btn-primary btn-block">
@@ -72,8 +72,6 @@
                         </div>
                     </div>
                 @endforeach
-
-               
 
                 </div>
 

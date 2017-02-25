@@ -8,7 +8,7 @@
                 <div class="panel-heading text-center">Add Deal</div>
                 <div class="panel-body">
                     <form class="form-horizontal" role="form" method="POST" action="{{ route('add') }}" enctype="multipart/form-data">
-                        {{ csrf_field() }}
+                        
 
                         <div class="form-group{{ $errors->has('heading') ? ' has-error' : '' }}">
                             <label for="name" class="col-md-4 control-label">Heading</label>
