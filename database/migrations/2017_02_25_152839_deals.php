@@ -18,7 +18,7 @@ class Deals extends Migration
             $table->string('heading');
             $table->string('detail');
             $table->string('vendor');
-            $table->string('image');
+            $table->string('image')->default('images/default-img.png');
             $table->string('link');
             $table->integer('user_id')->unsigned();
             $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');

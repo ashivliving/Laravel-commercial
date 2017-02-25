@@ -13,4 +13,9 @@
 
 Auth::routes();
 
-Route::get('/', 'HomeController@index');
+Route::get('/', 'HomeController@index')->name('home');
+
+Route::get('/deals', 'DealsController@all');
+
+Route::get('/add','DealsController@add');
+Route::post('/add','DealsController@validadd')->name('add');
