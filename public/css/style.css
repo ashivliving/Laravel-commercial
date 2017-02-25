@@ -8,6 +8,7 @@ body {
 }
 body {
     padding-top: 100px;
+    background-color: #e4dada;
 }
 footer {
     padding: 30px 0;
@@ -16,6 +17,11 @@ footer {
 /*
  * Custom styles
  */
+
+.background {
+    background-color: #666;
+}
+
 .navbar-brand {
     font-size: 20px;
 }
