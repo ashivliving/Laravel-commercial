@@ -17,6 +17,8 @@ class Deals extends Migration
             $table->increments('id');
             $table->string('heading');
             $table->string('detail');
+            $table->integer('current_cost');
+            $table->integer('actual_cost');
             $table->string('vendor');
             $table->string('image')->default('images/default-img.png');
             $table->string('link');

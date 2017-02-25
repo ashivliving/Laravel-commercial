@@ -49,11 +49,18 @@
                                 </a>
 
                                 <ul class="dropdown-menu" role="menu">
+                                    @if (Auth::user()->isadmin)
+                                    <li>
+                                        <a href="{{ route('add') }}">
+                                            <span class="glyphicon glyphicon-plus-sign">&nbsp;</span>Add Deals
+                                        </a>
+                                    </li>
+                                    @endif
                                     <li>
                                         <a href="{{ route('logout') }}"
                                             onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
-                                            Logout
+                                            <span class="glyphicon glyphicon-log-out">&nbsp;</span>Logout
                                         </a>
 
                                         <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">

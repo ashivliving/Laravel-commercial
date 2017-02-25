@@ -54,6 +54,8 @@ class DealsController extends Controller
 
         	$deals->heading = $request->heading;
         	$deals->vendor = $request->vendor;
+        	$deals->actual_cost = $request->actual_cost;
+        	$deals->current_cost = $request->current_cost;
         	$deals->link = $request->link;
         	$deals->detail = $request->detail;
         	$deals->user_id = Auth::id();

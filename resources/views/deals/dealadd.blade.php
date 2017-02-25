@@ -24,6 +24,34 @@
                             </div>
                         </div>
 
+                        <div class="form-group{{ $errors->has('current_cost') ? ' has-error' : '' }}">
+                            <label for="name" class="col-md-4 control-label">Current Cost</label>
+
+                            <div class="col-md-6">
+                                <input id="current_cost" type="text" class="form-control" name="current_cost" value="{{ old('current_cost') }}" required autofocus>
+
+                                @if ($errors->has('current_cost'))
+                                    <span class="help-block">
+                                        <strong>{{ $errors->first('current_cost') }}</strong>
+                                    </span>
+                                @endif
+                            </div>
+                        </div>
+
+                        <div class="form-group{{ $errors->has('actual_cost') ? ' has-error' : '' }}">
+                            <label for="name" class="col-md-4 control-label">Actual Cost</label>
+
+                            <div class="col-md-6">
+                                <input id="actual_cost" type="text" class="form-control" name="actual_cost" value="{{ old('actual_cost') }}" required autofocus>
+
+                                @if ($errors->has('actual_cost'))
+                                    <span class="help-block">
+                                        <strong>{{ $errors->first('actual_cost') }}</strong>
+                                    </span>
+                                @endif
+                            </div>
+                        </div>
+
                         <div class="form-group{{ $errors->has('detail') ? ' has-error' : '' }}">
                             <label for="name" class="col-md-4 control-label">Detail</label>
 

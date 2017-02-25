@@ -18,6 +18,10 @@ footer {
  * Custom styles
  */
 
+.thumbnail {
+    height:400px;
+}
+
 .background {
     background-color: #666;
 }
